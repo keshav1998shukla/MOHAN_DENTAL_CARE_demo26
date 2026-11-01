@@ -32,7 +32,7 @@ export function useTilt(strength = 8) {
   return { ref, onPointerMove: handleMove, onPointerLeave: handleLeave };
 }
 
-// ── Asset URL helper for Vite & GitHub Pages ───────────────────────────────
+// ── Asset URL helper for Vite's configured base path ───────────────────────
 export function getAssetUrl(path) {
   if (!path) return '';
   const cleanPath = path.replace(/^(\.\/|\/)?(public\/)?/, '');
